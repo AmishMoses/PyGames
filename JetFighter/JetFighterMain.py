@@ -149,7 +149,7 @@ def main():
 
         winner_message = ""
         if yellow_health <= 0:
-            winner_message("Players 2 wins!")
+            winner_message = ("Players 2 wins!")
         if blue_health <= 0:
             winner_message = ("Player 1 wins!")
         if winner_message != "":
