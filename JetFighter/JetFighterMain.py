@@ -133,8 +133,8 @@ def main():
         #This is how the left jet will fire 
                     BULLET_FIRE_SOUND.play()
 
-                if event.key == pygame.K_m and len(blue_bullets) < BULLET_NUMBER:
-                    bullet = pygame.Rect(blue.x + blue.y + blue.height//2 -2, 8, 5)
+                if event.key == pygame.K_RCTRL and len(blue_bullets) < BULLET_NUMBER:
+                    bullet = pygame.Rect(blue.x , blue.y + blue.height//2 -2, 8, 5)
                     blue_bullets.append(bullet)
                     BULLET_FIRE_SOUND.play()
         
