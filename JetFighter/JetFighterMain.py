@@ -12,7 +12,7 @@ Now lets create the background display'''
 
 FPS = 60
 HEALTH_FONT = pygame.font.SysFont('comicsans', 30)
-WINNER_FONT = pygame.font.SysFont('comicsana', 100)
+WINNER_FONT = pygame.font.SysFont('comicsans', 100)
 VELOCITY = 3 
 WHITE = ((255, 255, 255))
 BLUE = ((0, 0, 255))
@@ -80,7 +80,7 @@ def P2_moves(keys_pressed, blue):
     if keys_pressed[pygame.K_UP] and blue.y - VELOCITY > 0: #UP MOVEMENT
         blue.y -= VELOCITY
     if keys_pressed[pygame.K_DOWN] and blue.y + VELOCITY + blue.width < HEIGHT: #DOWN MOVEMENT
-        blue.y += VELOCITY
+        blue.y+= VELOCITY 
 
 
 def bullet_handle(yellow_bullets, blue_bullets, yellow, blue):
